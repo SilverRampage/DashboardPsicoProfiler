@@ -1,0 +1,100 @@
+/* Reset de estilo básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../public/background.jpg'); /* Cambia la imagen aquí */
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo claro con algo de transparencia */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+.left-description,
+.right-description {
+  width: 45%;
+}
+
+h1 {
+  font-size: 3em;
+  color: #FF7F00; /* Naranja */
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #00B5E2; /* Cyan */
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  color: #333;
+  line-height: 1.6;
+}
+
+.download-btn {
+  background-color: #800080; /* Morado */
+  color: white;
+  font-size: 1.5em;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+  .download-btn:hover {
+    background-color: #FF7F00; /* Naranja */
+    transform: scale(1.1);
+  }
+
+  .download-btn:active {
+    background-color: #FF4D00; /* Naranja más oscuro */
+  }
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .left-description, .right-description {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
